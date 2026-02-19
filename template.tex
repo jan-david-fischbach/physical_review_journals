@@ -64,6 +64,10 @@
 
 \usepackage{orcidlink}
 \usepackage{datetime}
+\usepackage{cancel}
+\usepackage{braket}
+\usepackage{siunitx}
+
 [- IMPORTS -]
 
 \begin{document}
@@ -124,12 +128,14 @@
 [-CONTENT-]
 
 [#- if parts.acknowledgments #]
+
 \begin{acknowledgments}
 [-parts.acknowledgments-]
 \end{acknowledgments}
 [# endif -#]
 
 [#- if parts.appendix #]
+
 \appendix
 [-parts.appendix-]
 [# endif -#]
