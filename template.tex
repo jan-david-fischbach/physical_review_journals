@@ -69,6 +69,12 @@
 [# endif #]
 [- IMPORTS -]
 
+% REVTeX replaces the tabular internals of the array package with copies of an old version.
+% With current versions of array this breaks p columns ("Extra \or"), so keep the array package as it is.
+\makeatletter
+\let\switch@array\relax
+\makeatother
+
 \begin{document}
 [#- if options.preprint #]
 \preprint{[-options.preprint-]}
