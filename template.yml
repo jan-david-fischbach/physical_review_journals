@@ -228,6 +228,13 @@ options:
       - letterpaper
       - a4paper
       - a5paper
+  - id: floatfix
+    type: boolean
+    required: false
+    default: false
+    description: >-
+      Let REVTeX place floats that would otherwise get stuck ("A float is
+      stuck" warning), typically wide floats in two-column documents.
   - id: additional_packages
     type: string
     required: false

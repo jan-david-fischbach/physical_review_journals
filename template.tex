@@ -56,6 +56,9 @@
     [#- if options.nobibnotes -#]
     ,nobibnotes
     [#- endif -#]
+    [#- if options.floatfix -#]
+    ,floatfix
+    [#- endif -#]
     [#- if doc.keywords #],showkeys[#- endif -#]
     [#- if options.paper_size -#]
     ,[-options.paper_size-]
