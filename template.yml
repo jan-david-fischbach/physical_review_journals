@@ -228,6 +228,13 @@ options:
       - letterpaper
       - a4paper
       - a5paper
+  - id: additional_packages
+    type: string
+    required: false
+    description: >-
+      Comma-separated list of additional LaTeX packages to load, e.g.
+      "cancel, braket". Use this for packages the content relies on that the
+      template does not load itself.
 files:
   - template.tex
   - revtex4-2.cls

@@ -64,6 +64,9 @@
 
 \usepackage{orcidlink}
 \usepackage{datetime}
+[# if options.additional_packages #]
+\usepackage{[-options.additional_packages-]}
+[# endif #]
 [- IMPORTS -]
 
 \begin{document}
